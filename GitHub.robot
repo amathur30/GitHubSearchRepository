@@ -53,7 +53,7 @@ Verify the link text
    [Arguments]  ${Value}
    Should contain  ${link_text}  ${Value}
 
-Click on the link
+Click on the link to navigate to repository page
    click element   ${link_text}
 
 Navigate to Repository page
@@ -82,7 +82,7 @@ Search Git Hub Result
     Click on Seacrh button
     Verify the link text  mvoloskov/decider
     Verify that there is only one repository result  1
-    Click on the link
+    Click on the link to navigate to repository page
     Navigate to Repository page
     ${All_Text}  Get text  ${Repository_file}
     ${Remove_Space}  Remove String  ${All_Text}  ${SPACE}
